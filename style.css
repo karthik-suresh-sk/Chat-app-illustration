@@ -1,0 +1,369 @@
+/* 
+# Front-end Style Guide
+## Layout
+
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+### Primary
+
+#### Text
+- Pale Violet (sub-heading at the top of the app UI): hsl(276, 100%, 81%)
+- Moderate Violet (chat on the left): hsl(276, 55%, 52%)
+- Desaturated Dark Violet (chat on the right): hsl(271, 15%, 43%)
+- Grayish Blue (placeholder text): hsl(206, 6%, 79%)
+- Very Dark Desaturated Violet (main heading): hsl(271, 36%, 24%)
+- Dark Grayish Violet (paragraph): 
+
+#### Gradients
+These two colors are the vibrant background colors you see throughout 
+the design and are applied as a linear gradient:
+- Light Magenta: hsl(293, 100%, 63%)
+- Light Violet: hsl(264, 100%, 61%)
+
+### Secondary
+
+- White: hsl(0, 0%, 100%)
+- Light Grayish Violet (app background): hsl(270, 20%, 96%)
+- Very Dark Desaturated Violet (submit button background): hsl(271, 36%, 24%)
+- Very Light Magenta (radio button outline): hsl(289, 100%, 72%)
+
+## Typography
+
+### Body Copy
+- Font size: 16px
+
+### Font
+- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+- Weights: 400, 500, 700
+*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(270, 20%, 96%);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-violet {
+    margin: 0;
+    width: 35%;
+    height: 55vh;
+    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    position: absolute;
+    z-index: -1;
+    border-radius: 0px 0px 1000px 0px;
+}
+
+.bg-grey {
+    width: 35%;
+    height: 90vh;
+    background-image: linear-gradient(hsla(293, 100%, 63%, 0.05), hsla(264, 100%, 61%, 0.05));
+    position: absolute;
+    bottom: -300px;
+    right: 0;
+    z-index: -1;
+    border-radius: 1000px 0px 0px 0px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.phone {
+    margin: 30px;
+    padding: 2%;
+    width: 50%;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.background {
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 20px;
+    color: white;
+}
+
+.profile-info {
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-radius: 20px 20px 10px 10px;
+}
+
+.camera {
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    height: 20px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 0px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    justify-content: space-evenly;
+}
+
+
+.profile img {
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 25px;
+}
+
+.description p {
+    font-size: 10px;
+    color: hsl(276, 100%, 81%);
+}
+
+.toggle {
+    margin-right: 5%;
+}
+
+.receiver {
+    width: 60%;
+    font-size: 10px;
+    margin-top: 4%;
+    margin-left: 2%;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: rgba(194, 192, 192, 0.2);
+    color: hsl(276, 55%, 52%);
+}
+
+.sender {
+    width: 60%;
+    font-size: 10px;
+    margin-top: 4%;
+    margin-right: 2%;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: white;
+    color: hsl(271, 15%, 43%);
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.images {
+    margin-top: 4%;
+    margin-right: 2%;
+}
+
+.images img {
+    border-radius: 10px;
+}
+
+.checkbox {
+    padding: 5% 10%;
+    font-size: 10px;
+    background-image: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    color: white;
+    margin-top: 4%;
+    margin-left: 2%;
+    width: 65%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox p {
+    font-size: 10px;
+    font-weight: 600;
+    display: inline;
+}
+
+.para {
+    font-size: 1em;
+}
+
+.typeSection {
+    display: flex;
+    justify-content: center;
+}
+
+.send {
+    background-color: white;
+    margin-top: 3%;
+    padding: 2%;
+    margin-bottom: 3%;
+    width: 90%;
+    border-radius: 50px;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(206, 6%, 79%);
+}
+
+.input {
+    border: none;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.enter {
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 100px;
+    width: 9%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 0%;
+    color: hsl(271, 36%, 24%);
+    margin: 30px;
+}
+
+.contents p {
+    font-size: 15px;
+    line-height: 1.5;
+    word-spacing: 2px;
+    margin-top: 30px;
+    color: hsl(270, 7%, 64%);
+}
+
+
+
+@media only screen and (min-width: 900px) {
+
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .phone {
+        margin: 30px;
+        width: 20%;
+        padding: 1%;
+    }
+
+    .description p {
+        font-size: 0.7em;
+    }
+
+    .description h5 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .contents {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        margin: 0;
+        margin-left: 30px;
+        width: 30%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .input {
+        border: none;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .bg-violet {
+        width: 25%;
+        height: 60vh;
+        border-radius: 0px 0px 1000px 1000px;
+    }
+
+    .bg-grey {
+        width: 20%;
+        height: 60vh;
+        bottom: 0px;
+        border-radius: 1000px 55px 0px 0px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phone {
+        margin: 30px;
+        width: 60%;
+        padding: 1%;
+    }
+
+    .content {
+        text-align: left;
+        align-items: flex-start;
+        margin-left: 50px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .input {
+        border: none;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .bg-violet {
+        width: 35%;
+        height: 50vh;
+        border-radius: 0px 0px 1000px 0px;
+    }
+
+    .bg-grey {
+        width: 30%;
+        bottom: -250px;
+        height: 50vh;
+        border-radius: 1000px 0px 0px 0px;
+    }
+
+}
